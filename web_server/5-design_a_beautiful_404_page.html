@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Page not found</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #2a5298, #0f1b3d);
+      font-family: Georgia, serif;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      padding: 40px 50px;
+      max-width: 560px;
+      margin: 20px;
+    }
+    .code { font-size: 6rem; font-weight: bold; margin: 0; letter-spacing: 8px; }
+    svg { width: 180px; height: auto; animation: float 3s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-3deg); }
+      50% { transform: translateY(-14px) rotate(3deg); }
+    }
+    .quote { font-size: 1.8rem; font-style: italic; margin: 16px 0 4px; }
+    .translation { opacity: 0.75; margin: 0 0 20px; }
+    p { font-size: 1.1rem; }
+    a {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 30px;
+      background: #fff;
+      color: #1e3c72;
+      border-radius: 30px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+    a:hover { transform: scale(1.08); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30 40 H120 V75 Q120 100 95 100 H60 Q30 100 30 75 Z" fill="#c9a26b" stroke="#fff" stroke-width="3"/>
+      <rect x="115" y="30" width="40" height="22" rx="6" fill="#8a6a3d" stroke="#fff" stroke-width="3"/>
+      <path d="M145 28 Q150 10 165 14 Q175 18 170 30" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="4 5"/>
+    </svg>
+    <h1 class="code">404</h1>
+    <p class="quote">Ceci n'est pas une page</p>
+    <p class="translation">(This is not a page)</p>
+    <p>Oops! The page you are looking for does not exist, just like this pipe is not a pipe.</p>
+    <a href="/">Back to home</a>
+  </div>
+</body>
+</html>
